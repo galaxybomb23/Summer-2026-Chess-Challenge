@@ -39,7 +39,7 @@ Fill this table in as registrations are received.
 
 | Language | Slot 1 | Slot 2 |
 | --- | --- | --- |
-| Rust | Open | Open |
+| Rust | [Thomas O'Donnell](https://github.com/iBoot32) | Open |
 | Go | Open | Open |
 | C | [Thomas Munson](https://github.com/TRMunson7) | Open |
 | C++ | [Elijah Jorgensen](https://github.com/galaxybomb23) | Open |
@@ -51,7 +51,7 @@ Fill this table in as registrations are received.
 | Java | Open | Open |
 | C# | Open | Open |
 | TypeScript | Open | Open |
-| Matlab | A[rjun Siderys](https://github.com/asiderys) | Open |
+| Matlab | [Arjun Siderys](https://github.com/asiderys) | Open |
 | Kotlin | Open | Open |
 | gdscript | [Asher Sprigler](https://github.com/Legitimatemuffin) | Open |
 | Other | Open | Open |
