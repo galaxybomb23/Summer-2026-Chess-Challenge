@@ -41,18 +41,19 @@ Fill this table in as registrations are received.
 | --- | --- | --- |
 | Rust | Open | Open |
 | Go | Open | Open |
-| C | Thomas Munson | Open |
-| C++ | Elijah Jorgensen | Open |
+| C | [Thomas Munson](https://github.com/TRMunson7) | Open |
+| C++ | [Elijah Jorgensen](https://github.com/galaxybomb23) | Open |
 | Zig | Open | Open |
 | OCaml | Open | Open |
 | Haskell | Open | Open |
-| Python | Open | Open |
+| Python | [Alex Tauriainen](https://github.com/Aarynda)  | Open |
 | Swift | Open | Open |
 | Java | Open | Open |
 | C# | Open | Open |
 | TypeScript | Open | Open |
-| Matlab | Open | Open |
+| Matlab | A[rjun Siderys](https://github.com/asiderys) | Open |
 | Kotlin | Open | Open |
+| gdscript | [Asher Sprigler](https://github.com/Legitimatemuffin) | Open |
 | Other | Open | Open |
 
 ## Phase 1: Registration
