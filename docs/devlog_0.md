@@ -6,7 +6,9 @@ The runtime will be responsible for managing userinput mild parsing and executin
 
 I plan to use ":" as my escape character for commands, so for example ":l" would list all avalible moves "e4" would attempt to move a piece to e4. I will also implement some basic commands for quitting the application, undoing moves, resetting the board, and loading FEN strings.
 
-There are some TUI libraries for C++ that I may look into using, but for the time being I will be using simple I/O.
+There are some TUI libraries for C++ that I may look into using, but for the time being I will be using simple I/O. 
+
+> I think I will try to use FTXUI for TUI.
 
 ## The Board
 The board will be the main component of the application. It will hold the game state in a 2D vector of pieces. It will also keep track of the current player and any other relevant information about the game state.
