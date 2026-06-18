@@ -6,6 +6,8 @@
 #include <string>
 #include <vector>
 
+#define DEBUG true
+
 enum Color
 {
     BLACK = 0,
@@ -45,5 +47,36 @@ struct Move
     int moveNumber = 0;
     MoveType moveType = NORMAL;
 };
+
+std::string PieceTypeToString(PieceType piece)
+{
+    std::string ret;
+
+    switch (piece)
+    {
+    case PieceType::KING:
+        ret = "KING";
+        break;
+    case PieceType::BISHOP:
+        ret = "BISHOP";
+        break;
+    case PieceType::ROOK:
+        ret = "ROOK";
+        break;
+    case PieceType::KNIGHT:
+        ret = "KNIGHT";
+        break;
+    case PieceType::PAWN:
+        ret = "PAWN";
+        break;
+    case PieceType::QUEEN:
+        ret = "QUEEN";
+        break;
+    default:
+        ret = "UNKNOWN" + piece;
+        break;
+    }
+    return ret;
+}
 
 #endif
