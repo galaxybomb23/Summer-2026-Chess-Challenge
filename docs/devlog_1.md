@@ -17,4 +17,7 @@ The current setup is as follows:
 - tests/ - test files
 
 # development
-i made a basic Null piece that is used for rendering the background of the board, i then copied this and updated names and added TODOs for the other pieces.
+- i made a basic Null piece that is used for rendering the background of the board, i then copied this and updated names and added TODOs for the other pieces.
+- Copied example code for FTXUI to render board, spacing is really jank rn. plan to add padding later for alignment
+- made a demo test file to get Gtest working
+- Created run script to run the application, clean the directory, and run tests
