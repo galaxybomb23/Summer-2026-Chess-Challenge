@@ -19,11 +19,11 @@ public:
     // string representation of the board. This will be used for rendering the board and for debugging purposes. The board will use Unicode characters for pieces and blank spaces. Once TUI is involved this may change
     std::string toString() const;
 
-    // this clears the board to the default starting position 
+    // this clears the board to the default starting position
     void reset();
 
     // This clears a board of any pieces
-    void clear(); 
+    void clear();
 
     // This is used to validate a move against the board state
     bool isValidMove(const Move &move) const;
@@ -35,7 +35,7 @@ public:
     void undoMove();
 
     // this is used for board building. it does no validation and just places pieces on the board.
-    void placePiece(Color color, PieceType piece, int xcord, int ycord);
+    bool placePiece(Color color, PieceType piece, int xcord, int ycord);
 
     // this is used to initialize a new board or wipe the current board to a new state. it will return false if the FEN string is invalid. it will return true if the FEN string is valid and the board state has been updated. If the FEN is of a differnet board size it will update the board size accordingly. This will also reset the move history and turn number.
     bool importFEN(std::string input);
@@ -46,6 +46,11 @@ public:
     // this is to determine who is winning based on material
     int pointEval() const;
 
+    // this sets up a standard game
+    void initGame();
+
+    // returns all legal moved
+    std::vector<Move> legalMoves();
 
     friend std::ostream &operator<<(std::ostream &os, const Board &board);
 

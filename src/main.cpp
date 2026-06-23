@@ -47,7 +47,9 @@ namespace
 
 int main()
 {
+    DEBUG &&std::cout << "Test statement";
     Board board(8, 8);
+    board.initGame();
     std::string command;
     std::string message = "Commands: :help, :board, :quit";
 
@@ -76,7 +78,26 @@ int main()
             continue;
         }
 
+        // print point eval
+        if (command == ":point" || command == ":p")
+        {
+            auto points = board.pointEval();
+            message = "Points on the Board: " +
+                      std::to_string(points) + " \n" + (points > 0 ? "White is Winning" : points < 0 ? "Black Is Winning"
+                                                                                                     : "Its all tied Up");
+
+            continue;
+        }
+
         // legal moves command
+        if (command == ":list moves" || command == ":lm")
+        {
+            std::cout << "Legal moves:\n";
+            for (auto move : board.legalMoves())
+            {
+                std::cout << move << "\n";
+            }
+        }
 
         // import FEN command
 
